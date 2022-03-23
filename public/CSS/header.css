@@ -8,7 +8,7 @@ header img {
 
 .lista li a {
   text-decoration: none;
-  color: var(--grisOscuro);
+  color: black;
   font-size: 16px;
 }
 

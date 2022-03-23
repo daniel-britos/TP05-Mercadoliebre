@@ -1,12 +1,11 @@
+footer {
+  background-color: white;
+}
 footer section {
   margin: auto;
   text-align: center;
   width: 280px;
-}
-
-footer p:last-child {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 footer section h4 {
   font-size: 16px;
@@ -15,8 +14,6 @@ footer section p {
   font-size: 12px;
 }
 footer section .fas {
-  font-size: 40px;
+  font-size: 2em;
   color: var(--celeste);
-  margin: 10px;
-  padding-top: 20px;
 }
