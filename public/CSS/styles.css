@@ -2,3 +2,19 @@
 @import "./header.css";
 @import "./main.css";
 @import "./footer.css";
+
+@media (min-width: 361px) {
+  .caja-inferior h4 {
+    display: block;
+  }
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .lista {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .bars {
+    display: none;
+  }
+}

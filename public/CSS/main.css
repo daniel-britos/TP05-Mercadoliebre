@@ -1,32 +1,55 @@
 main {
   background-color: var(--grisClaro);
+  width: 90%;
+  margin: 0 auto;
 }
-main section {
-  margin-left: 15px;
+main section article {
+  margin-bottom: 10px;
 }
 .main-banner {
-  height: 60px;
-  width: 380px;
-  padding-bottom: 20px;
+  width: 100%;
 }
 main section h2 {
   font-size: 24px;
   padding-bottom: 10px;
 }
-main section article {
-  margin-bottom: 10px;
-}
-main section article h4 {
+
+.caja-inferior h4 {
   font-size: 16px;
-  padding-top: 5px;
+  padding-top: 15px;
+  display: none;
 }
+
 #imagen {
-  width: 380px;
-  height: 380px;
+  width: 100%;
 }
 #precios {
   font-size: 18px;
 }
 #descuentos {
   font-size: 16px;
+  color: var(--verde);
+}
+.logo-truck {
+  background-color: white;
+  display: inline-block;
+  padding-right: 35px;
+  padding-bottom: 35px;
+  border-radius: 50%;
+  border: var(--verde) solid 3px;
+}
+.fa-truck {
+  font-size: 20px;
+  position: relative;
+  left: 11px;
+  top: 12px;
+  color: var(--verde);
+}
+.caja-inferior {
+  border-top: 1px solid var(--grisClaro);
+}
+
+.caja-inferior > div {
+  padding: 15px;
+  background-color: white;
 }
