@@ -3,6 +3,7 @@
 @import "./main.css";
 @import "./footer.css";
 
+
 @media (min-width: 361px) {
   .caja-inferior h4 {
     display: block;
