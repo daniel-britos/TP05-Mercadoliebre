@@ -2,8 +2,18 @@ main {
   width: 90%;
   margin: 0 auto;
 }
+.visita {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ofertas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 main section article {
   margin-bottom: 10px;
+
 }
 .main-banner {
   width: 100%;
@@ -15,17 +25,24 @@ main section h2 {
 .caja-inferior {
   border-top: 1px solid #ebebeb;
   padding: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .caja-inferior h4 {
-  font-size: 16px;
-  padding-top: 15px;
+  font-size: 12px;
+  padding-top: 5px;
   display: none;
+  align-self: flex-start;
+
+
 }
 .caja-inferior .fas {
   padding: 5px;
-  background: white;
+  background-color: white;
   color: #39b54a;
-  border: 1px solid #39b54a ;
+  border: 1px solid #39b54a;
   border-radius: 50%;
   font-size: 16px;
 }
@@ -34,11 +51,21 @@ main section h2 {
   width: 100%;
 }
 #precios {
-  font-size: 18px;
+  font-size: 12px;
+  width: 40%;
 }
 #descuentos {
-  font-size: 16px;
+  font-size: 9px;
   color: var(--verde);
+  width: 60%;
 }
+.caja-interna {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+
 
 

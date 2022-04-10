@@ -6,6 +6,11 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
+body {
+  max-width: 769px;
+  margin: auto;
+  background-color: var(--grisClaro);
+}
 :root {
   --amarillo: #eac926;
   --azul: #03264c;
