@@ -16,7 +16,7 @@
 .form-nombre div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .form-nombre div label {
     font-weight: bolder;
@@ -24,7 +24,7 @@
 .form-contrasena div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .form-contrasena div label {
     font-weight: bolder;
@@ -32,7 +32,7 @@
 .form-nacimiento div {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .form-nacimiento div label {
     font-weight: bolder;
@@ -48,8 +48,13 @@
     flex-direction: column;
     margin-bottom: 10px;
 }
+.categ-input {
+    border: none;
+    border-radius: 5px;
+}
 .form-categoria div ul li {
     list-style-type: none;
+    margin-bottom: 5px;
 }
 .form-foto {
     display: flex;
@@ -83,8 +88,16 @@
     transition: all 0.5s;
     transform: scale(1.1);
 }
-
-
+.form-tipousuario ul{
+    display: flex;
+    justify-content: space-between;
+}
+#comprador {
+    margin-right: 5px;
+}
+#vendedor {
+    margin-right: 10px;
+}
 
 
 /* MOBILE */
@@ -100,8 +113,7 @@
 /* DESKTOP */
 @media (min-width: 769px) {
     .main-form {
-        display: flex;
-        
+        display: flex;   
         align-items: center;
         flex-direction: column;
     }
@@ -144,6 +156,10 @@
         list-style: none;
     }
     .form-foto {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-tipousuario ul {
         display: flex;
         flex-direction: column;
     }

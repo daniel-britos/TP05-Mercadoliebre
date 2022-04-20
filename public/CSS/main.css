@@ -6,11 +6,16 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
+.visita article {
+  background-color: white;
+}
 .ofertas {
   display: flex;
   flex-wrap: wrap;
 }
-
+.ofertas article {
+  background-color: white;
+}
 main section article {
   margin-bottom: 10px;
 
@@ -25,20 +30,23 @@ main section h2 {
 .caja-inferior {
   border-top: 1px solid #ebebeb;
   padding: 15px;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative;
 }
 .caja-inferior h4 {
   font-size: 12px;
   padding-top: 5px;
   display: none;
   align-self: flex-start;
-
-
 }
-.caja-inferior .fas {
+
+.icon-envios {
+  position: absolute;
+  bottom: 50px;
+}
+.fa-truck {
   padding: 5px;
   background-color: white;
   color: #39b54a;
@@ -46,7 +54,6 @@ main section h2 {
   border-radius: 50%;
   font-size: 16px;
 }
-
 #imagen {
   width: 100%;
 }
@@ -67,5 +74,37 @@ main section h2 {
 
 
 
+/* MOBILE */
+@media (max-width: 320px){
+  #precios {
+    font-size: 18px;
+    width: 30%;
+  }
+  #descuentos {
+    font-size: 12px;
+    width: 70%;
+  }  
+}
+/* TABLET */
+@media (min-width: 361px) {
+  /* main */ 
+  .caja-inferior h4 {
+    display: block;
+  }
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 50%;
+  }
+  
+}
+/* DESKTOP */
+@media (min-width: 769px){
+  .visita article {
+    width: 25%;
+  }
+  .ofertas article {
+    width: 25%;
+  }
 
+}
 

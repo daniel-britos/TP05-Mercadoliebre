@@ -7,7 +7,6 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 769px;
   margin: auto;
   background-color: var(--grisClaro);
 }
