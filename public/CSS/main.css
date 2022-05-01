@@ -4,30 +4,26 @@ main {
 }
 .visita {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 .visita article {
   background-color: white;
 }
 .ofertas {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 .ofertas article {
   background-color: white;
 }
 main section article {
-  margin-bottom: 10px;
-
-}
-.main-banner {
-  width: 100%;
-}
-main section h2 {
-  font-size: 24px;
-  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 .caja-inferior {
+  background-color: white;
   border-top: 1px solid #ebebeb;
   padding: 15px;
   display: flex;
@@ -36,16 +32,34 @@ main section h2 {
   position: relative;
 }
 .caja-inferior h4 {
+  display: none;
   font-size: 12px;
   padding-top: 5px;
-  display: none;
   align-self: flex-start;
 }
+main section article:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+
+}
+main section article:hover .caja-inferior h4 {
+  display: block;
+}
+
+.main-banner {
+  width: 100%;
+}
+main section h2 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
 
 .icon-envios {
   position: absolute;
   bottom: 50px;
 }
+
 .fa-truck {
   padding: 5px;
   background-color: white;
@@ -54,6 +68,11 @@ main section h2 {
   border-radius: 50%;
   font-size: 16px;
 }
+.fa-truck:hover {
+  transform: rotate(-90deg);
+  transition: all 0.5s;
+}
+
 #imagen {
   width: 100%;
 }
@@ -75,7 +94,7 @@ main section h2 {
 
 
 /* MOBILE */
-@media (max-width: 320px){
+@media (max-width: 360px){
   #precios {
     font-size: 18px;
     width: 30%;
@@ -86,24 +105,45 @@ main section h2 {
   }  
 }
 /* TABLET */
-@media (min-width: 361px) {
+@media (min-width: 780px) {
   /* main */ 
-  .caja-inferior h4 {
-    display: block;
+
+  main section article {    
+    width: 250px;
   }
-  main section article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    width: 50%;
+  .visita {
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    
   }
+  .ofertas {
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+  }
+  main section h2 {
+    padding-left: 60px;
+  }
+  
   
 }
 /* DESKTOP */
-@media (min-width: 769px){
-  .visita article {
-    width: 25%;
+@media (min-width: 1000px){
+  main section article {
+    width: 200px;
   }
-  .ofertas article {
-    width: 25%;
+  .visita {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .ofertas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
   }
 
 }

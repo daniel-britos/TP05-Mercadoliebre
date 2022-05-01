@@ -8,6 +8,7 @@
 }
 body {
   margin: auto;
+  max-width: 1024px;
   background-color: var(--grisClaro);
 }
 :root {

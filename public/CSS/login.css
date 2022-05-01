@@ -1,9 +1,4 @@
-.main-login {
 
-}
-.main-login section {
- 
-}
 .form-login {
     display: flex;
     flex-direction: column;
@@ -28,18 +23,21 @@
     border: none;
     width: 260px;
     padding: 5px;
-
+}
+.btn-login:hover {
+    background-color: #0022AA;
+    cursor: pointer;
 }
 
 
 /* TABLET */
-@media (min-width: 361px) {
+@media (min-width: 780px) {
     .btn-login {
         padding: 5px 140px;     
     }
 }
 /* DESKTOP */
-@media (min-width: 769px){
+@media (min-width: 1000px){
     .form-login div input {
         padding: 5px;
         width: 360px;

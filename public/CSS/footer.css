@@ -16,7 +16,7 @@
   font-size: 12px;
 }
 .main-footer section article .fas {
-  font-size: 2em;
+  font-size: 25px;
   color: var(--celeste);
 }
 .footer-copyright p {
@@ -30,14 +30,22 @@
 }
 
 /* DESKTOP */
-@media (min-width: 769px) {
+@media (min-width: 1000px) {
   .main-footer section  {
     display: flex;
   }
 }
 /* TABLET */
-@media (max-width: 361px) {
+@media (min-width: 780px) {
   .footer-copyright {
-    font-size: 10px;
+    font-size: 12px;
   }
+  .main-footer section  {
+    display: flex;
+  }
+  .main-footer .fas:hover {
+    color: var(--azul);
+    cursor: pointer;
+  }
+
 }
